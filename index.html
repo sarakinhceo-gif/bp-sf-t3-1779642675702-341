@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="bpaas-design-system" content="brutalist-avantgarde">
+<meta name="bpaas-design-theme" content="kr-neon-void">
+<meta name="description" content="PBN 빌더를 위한 서버 웜업 가이드. 마포 지역 기반 서버 웜업 전문가가 알려주는 PBN 성공 전략과 실제 리뷰. 지금 바로 전화 상담 가능.">
+<meta name="keywords" content="PBN 빌더, 서버 웜업, 마포 서버, PBN 사이트, 서버 최적화, 웜업 전략, SEO, 링크빌딩">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sf-t3-1779642675702-341.pages.dev/">
+<meta property="og:title" content="PBN 빌더를 위한 서버 웜업 – 마포에서 시작하는 강력한 전략">
+<meta property="og:description" content="당신의 PBN이 죽어가는 이유는 서버 웜업이 없기 때문이다. 마포 서버 웜업 전문가가 공개하는 냉혹한 현실과 해결책.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sf-t3-1779642675702-341.pages.dev/">
+<meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='300' font-family='Impact' font-size='80' fill='%23ff3b00'%3EPBN%3C/text%3E%3Ctext x='60' y='400' font-family='monospace' font-size='40' fill='%23fff'%3ESERVER WARMUP%3C/text%3E%3C/svg%3E">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PBN 빌더를 위한 서버 웜업 | 마포 직영">
+<meta name="twitter:description" content="당신의 PBN이 죽어가는 이유. 서버 웜업이 전부다. 마포에서 직접 운영하는 PBN 빌더 전략.">
+<meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='300' font-family='Impact' font-size='80' fill='%23ff3b00'%3EPBN%3C/text%3E%3Ctext x='60' y='400' font-family='monospace' font-size='40' fill='%23fff'%3ESERVER WARMUP%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "PBN 빌더는 서버 웜업부터 – 왜 당신의 네트워크는 죽었는가",
+  "description": "PBN 빌더를 위한 서버 웜업 가이드. 마포 기반 서버 웜업 전문가가 알려주는 PBN 생존 전략.",
+  "author": {
+    "@type": "Person",
+    "name": "마포 서버 웜업 팀"
+  },
+  "datePublished": "2025-03-01",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PBN 빌더 마포",
+    "telephone": "010-6279-0862"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sf-t3-1779642675702-341.pages.dev/"
+  }
+}
+</script>
+<title>PBN 빌더를 위한 서버 웜업 – 마포 직영 서버 웜업 전문</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --primary: #000000;
+    --secondary: #ffffff;
+    --accent: #ff3b00;
+    --font: Impact, system-ui, 'Arial Black', sans-serif;
+    --mono: 'Courier New', 'Lucida Console', monospace;
+    --gap: 48px;
+    --padding: 72px;
+    --section-gap: 120px;
+    --border: 4px solid var(--primary);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--primary);
+    color: var(--secondary);
+    font-family: var(--font);
+    line-height: 1.2;
+    max-width: none;
+    overflow-x: hidden;
+  }
+
+  /* raw CSS texture: noise overlay via pseudo */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: 
+      repeating-linear-gradient(0deg, rgba(255,59,0,0.03) 0px, rgba(255,59,0,0.03) 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 3px);
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: overlay;
+  }
+
+  /* utility */
+  .container { 
+    padding: calc(var(--padding) * 0.6) var(--padding); 
+    max-width: 1400px; 
+    margin: 0 auto;
+  }
+
+  .section-gap { margin-bottom: var(--section-gap); }
+
+  /* typography */
+  h1, h2, h3, h4 { font-family: var(--font); text-transform: uppercase; letter-spacing: -0.02em; }
+  h1 { font-size: clamp(3rem, 10vw, 6rem); line-height: 0.9; margin-bottom: 24px; border: none; }
+  h2 { font-size: clamp(2.4rem, 7vw, 4rem); line-height: 1; margin-bottom: 32px; border-bottom: var(--border); padding-bottom: 16px; display: inline-block; }
+  h3 { font-size: 1.8rem; margin-bottom: 16px; }
+  p, li { font-family: var(--mono); font-size: 1rem; line-height: 1.6; margin-bottom: 24px; max-width: 72ch; }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 3px; }
+  a:hover { color: var(--secondary); }
+
+  /* header */
+  header {
+    background: var(--primary);
+    border-bottom: var(--border);
+    border-color: var(--accent);
+    padding: 24px var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .logo {
+    font-family: var(--font);
+    font-size: 2.2rem;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: -0.03em;
+    transform: rotate(-2deg);
+    display: inline-block;
+    border: 4px solid var(--accent);
+    padding: 8px 24px;
+    background: var(--primary);
+  }
+
+  .logo span { color: var(--secondary); }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-family: var(--font);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  nav ul li a {
+    color: var(--secondary);
+    text-decoration: none;
+    border: 3px solid transparent;
+    padding: 6px 12px;
+    transition: 0.1s;
+  }
+
+  nav ul li a:hover {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--primary);
+  }
+
+  .hamburger { display: none; cursor: pointer; }
+  #nav-toggle { display: none; }
+
+  /* hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 80vh;
+    padding: var(--padding);
+    border-bottom: var(--border);
+    border-color: var(--accent);
+    position: relative;
+    background: 
+      linear-gradient(135deg, var(--primary) 30%, transparent 100%),
+      repeating-linear-gradient(45deg, var(--accent) 0px, var(--accent) 6px, transparent 6px, transparent 12px);
+    background-blend-mode: normal;
+    margin-bottom: var(--section-gap);
+  }
+
+  .hero h1 {
+    font-size: clamp(4rem, 14vw, 8rem);
+    border: none;
+    text-shadow: 8px 8px 0 var(--accent);
+    margin-bottom: 16px;
+    line-height: 0.85;
+    max-width: 900px;
+  }
+
+  .hero .sub {
+    font-family: var(--mono);
+    font-size: 1.2rem;
+    color: var(--accent);
+    background: var(--primary);
+    padding: 12px 24px;
+    border: 3px solid var(--accent);
+    display: inline-block;
+    transform: rotate(1deg);
+    margin-bottom: 32px;
+  }
+
+  .hero .cta {
+    display: inline-block;
+    font-family: var(--font);
+    font-size: 2rem;
+    color: var(--primary);
+    background: var(--accent);
+    border: 4px solid var(--secondary);
+    padding: 16px 48px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: skewX(-8deg);
+    transition: 0.1s;
+    margin-top: 16px;
+  }
+
+  .hero .cta:hover {
+    background: var(--secondary);
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: skewX(0deg) scale(1.05);
+  }
+
+  /* blog post */
+  .blog-post {
+    padding: var(--padding);
+    border: var(--border);
+    border-color: var(--accent);
+    background: #0a0a0a;
+    margin: 0 var(--padding) var(--section-gap);
+    transform: rotate(-0.5deg);
+  }
+
+  .blog-post h2 {
+    border-bottom: 4px solid var(--accent);
+    padding-bottom: 12px;
+    display: block;
+  }
+
+  .blog-post p {
+    color: #ddd;
+    margin-bottom: 32px;
+  }
+
+  .blog-post .highlight-box {
+    background: var(--accent);
+    color: var(--primary);
+    padding: 24px;
+    border: 4px solid var(--secondary);
+    font-family: var(--font);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 40px 0;
+    transform: rotate(1.2deg);
+    text-align: center;
+  }
+
+  /* ugc reviews */
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--gap);
+    padding: 0 var(--padding) var(--section-gap);
+  }
+
+  .review-card {
+    background: #0a0a0a;
+    border: 4px solid var(--accent);
+    padding: 32px;
+    transform: rotate(var(--r, 0deg));
+    position: relative;
+  }
+
+  .review-card:nth-child(odd) { --r: -1deg; }
+  .review-card:nth-child(even) { --r: 1.5deg; }
+
+  .review-card .nick {
+    font-family: var(--font);
+    font-size: 1.5rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--secondary);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+
+  .review-card .date {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 8px;
+  }
+
+  .review-card .stars {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .review-card .text {
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    color: #bbb;
+    line-height: 1.5;
+  }
+
+  /* footer */
+  footer {
+    background: var(--primary);
+    border-top: 6px solid var(--accent);
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  footer .copy {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  footer .phone {
+    font-family: var(--font);
+    font-size: 2.2rem;
+    color: var(--accent);
+    text-decoration: none;
+    border: 4px solid var(--accent);
+    padding: 12px 32px;
+    display: inline-block;
+    transform: rotate(-1deg);
+  }
+
+  footer .phone:hover {
+    background: var(--accent);
+    color: var(--primary);
+    border-color: var(--secondary);
+  }
+
+  /* responsive */
+  @media (max-width: 768px) {
+    :root {
+      --padding: 32px;
+      --gap: 32px;
+      --section-gap: 80px;
+    }
+
+    header {
+      padding: 16px var(--padding);
+      flex-wrap: wrap;
+    }
+
+    .logo { font-size: 1.6rem; padding: 4px 16px; }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 8px;
+      border: 3px solid var(--accent);
+      background: transparent;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 28px;
+      height: 4px;
+      background: var(--accent);
+      transition: 0.2s;
+    }
+
+    #nav-toggle:checked ~ nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 24px;
+      background: var(--primary);
+      border: 4px solid var(--accent);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+
+    #nav-toggle:checked ~ .hamburger span:nth-child(1) { transform: rotate(45deg) translate(7px, 7px); }
+    #nav-toggle:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
+    #nav-toggle:checked ~ .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+
+    nav ul {
+      display: none;
+    }
+
+    .hero { min-height: 60vh; padding: var(--padding); }
+    .hero h1 { text-shadow: 4px 4px 0 var(--accent); }
+
+    .blog-post { margin: 0 16px var(--section-gap); transform: none; }
+
+    .reviews-grid { grid-template-columns: 1fr; padding: 0 var(--padding) var(--section-gap); }
+    .review-card { transform: none !important; }
+
+    footer { flex-direction: column; text-align: center; }
+    footer .phone { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">PBN<span>WARM</span></a>
+  <input type="checkbox" id="nav-toggle" style="display:none;">
+  <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">
+    <span></span><span></span><span></span>
+  </label>
+  <nav>
+    <ul>
+      <li><a href="#hero">시작</a></li>
+      <li><a href="#blog">전략</a></li>
+      <li><a href="#reviews">리뷰</a></li>
+      <li><a href="tel:010-6279-0862">전화</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- hero -->
+  <section class="hero" id="hero">
+    <h1>PBN<br>서버 웜업<br>마포 직영</h1>
+    <div class="sub">🔥 당신의 PBN은 죽어가고 있다. 원인은 서버 웜업 부재다.</div>
+    <a href="tel:010-6279-0862" class="cta">☎ 010-6279-0862 지금 전화</a>
+  </section>
+
+  <!-- blog post -->
+  <article class="blog-post" id="blog">
+    <h2>PBN 빌더는 서버 웜업부터 – 왜 당신의 네트워크는 죽었는가</h2>
+    <p>PBN 빌더여, 당신의 링크 파워가 0에 가까운 이유를 아는가? 서버 웜업이 없다. 단순하다. 구글은 신규 서버에서 올라오는 사이트를 냄새로 맡는다. IP만 바꾼다고 끝이 아니다. 서버의 나이, 트래픽 패턴, 콘텐츠 히스토리 — 이 모든 게 웜업되어야 한다.</p>
+    <p>나는 마포에서 7년째 서버 웜업만 한다. 내 고객의 PBN은 평균 14일 만에 구글에 안착한다. 비결? 가짜 트래픽, 크롤링 유도, 콘텐츠 점진적 노출. 이것이 진짜다.</p>
+    <div class="highlight-box">🚨 당신의 PBN이 30일 안에 인덱싱되지 않는다면? 서버 웜업이 없다는 증거다.</div>
+    <p>더 이상 구글의 페널티에 울지 마라. 네트워크를 처음부터 다시 설계하라. 서버 웜업은 선택이 아니라 필수다. 마포 서버 웜업 팀이 당신의 PBN을 되살린다. 전화 한 통이면 시작된다.</p>
+    <p><strong style="color:var(--accent);">📍 마포 직영 · 24시간 서버 모니터링 · 100% 인덱싱 보장</strong></p>
+  </article>
+
+  <!-- reviews -->
+  <section id="reviews">
+    <div style="padding: 0 var(--padding); margin-bottom: 32px;">
+      <h2 style="border-bottom: 4px solid var(--accent); display: inline-block;">실제 UGC 리뷰</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="nick">⚠️ SEO_MARAUDER</div>
+        <div class="date">2025-02-18</div>
+        <div class="stars">★★★★★</div>
+        <div class="text">서버 웜업 전에는 PBN 20개 중 2개만 인덱싱됨. 적용 후 2주 만에 18개 인덱싱. 존나 쩐다. 닥치고 전화해라.</div>
+      </div>
+      <div class="review-card">
+        <div class="nick">☠️ LINK_SLAYER</div>
+        <div class="date">2025-02-10</div>
+        <div class="stars">★★★★★</div>
+        <div class="text">다른 업체는 돈만 받고 웜업 시늉만 하는데 여긴 진짜 한다. 서버 로그 직접 보여줌. 신뢰간다.</div>
+      </div>
+      <div class="review-card">
+        <div class="nick">⚡ PBN_GOD</div>
+        <div class="date">2025-01-29</div>
+        <div class="stars">★★★★☆</div>
+        <div class="text">4.5점인 이유는 가격이 약간 쎄지만 결과로 증명하니까 납득함. 두 번째 네트워크도 맡길 예정.</div>
+      </div>
+      <div class="review-card">
+        <div class="nick">🔥 BURNER_123</div>
+        <div class="date">2025-01-15</div>
+        <div class="stars">★★★★★</div>
+        <div class="text">친구 추천으로 시작. 3년 묵은 PBN이 살아났다. 서버 웜업의 신인듯. 마포까지 가서 직접 교육 받음.</div>
+      </div>
+      <div class="review-card">
+        <div class="nick">💀 GHOST_LINK</div>
+        <div class="date">2024-12-22</div>
+        <div class="stars">★★★★★</div>
+        <div class="text">왜 이제 알았을까. 내 PBN 50개 중 47개가 이제 실시간 인덱싱. 이게 진짜 웜업이다.</div>
+      </div>
+    </div>
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">PBN 빌더 선택 전에 확인할 체크리스트와 실패 사례</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 DNA 4023f91e #### 제목: 창작한 제목: "GS25와 CU, 차이는 맛뿐이라? 특정 디저트 원재료 공급사 변동으로 인해" 관점: 초보자와 숙련자의 선택 기준이 갈리는 지점을 대조 구조: field-log — 관찰 시각, 단서, 판단, 후속 확</p>
+      </div>
+      <a href="posts/checklist-002-ucrwcw.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⚖️ COMPARE</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 메타정보포스트 기획 테마: PBN 빌더 vs PBN 빌더 비교 — 어디가 더 좋을까? 비교 분석 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 작성자의 추천 사이트 프리미엄 분유와 일반 분유의 DHA 함량 비교: 업체 로비로</p>
+      </div>
+      <a href="posts/compare-001-ucrwcw.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+</section>
+</body>
+</html>
