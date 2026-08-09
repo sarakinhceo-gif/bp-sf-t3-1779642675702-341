@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-neon-void">
 <meta name="description" content="PBN 빌더를 위한 서버 웜업 가이드. 마포 지역 기반 서버 웜업 전문가가 알려주는 PBN 성공 전략과 실제 리뷰. 지금 바로 전화 상담 가능.">
 <meta name="keywords" content="PBN 빌더, 서버 웜업, 마포 서버, PBN 사이트, 서버 최적화, 웜업 전략, SEO, 링크빌딩">
 <meta name="robots" content="index, follow">
@@ -18,449 +16,428 @@
 <meta name="twitter:title" content="PBN 빌더를 위한 서버 웜업 | 마포 직영">
 <meta name="twitter:description" content="당신의 PBN이 죽어가는 이유. 서버 웜업이 전부다. 마포에서 직접 운영하는 PBN 빌더 전략.">
 <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='300' font-family='Impact' font-size='80' fill='%23ff3b00'%3EPBN%3C/text%3E%3Ctext x='60' y='400' font-family='monospace' font-size='40' fill='%23fff'%3ESERVER WARMUP%3C/text%3E%3C/svg%3E">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "PBN 빌더는 서버 웜업부터 – 왜 당신의 네트워크는 죽었는가",
-  "description": "PBN 빌더를 위한 서버 웜업 가이드. 마포 기반 서버 웜업 전문가가 알려주는 PBN 생존 전략.",
-  "author": {
-    "@type": "Person",
-    "name": "마포 서버 웜업 팀"
-  },
-  "datePublished": "2025-03-01",
-  "publisher": {
-    "@type": "Organization",
-    "name": "PBN 빌더 마포",
-    "telephone": "010-6279-0862"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://sf-t3-1779642675702-341.pages.dev/"
-  }
-}
-</script>
+<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "BlogPosting", "headline": "PBN 빌더는 서버 웜업부터 – 왜 당신의 네트워크는 죽었는가", "description": "PBN 빌더를 위한 서버 웜업 가이드.</script>
 <title>PBN 빌더를 위한 서버 웜업 – 마포 직영 서버 웜업 전문</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
-    --primary: #000000;
-    --secondary: #ffffff;
-    --accent: #ff3b00;
-    --font: Impact, system-ui, 'Arial Black', sans-serif;
-    --mono: 'Courier New', 'Lucida Console', monospace;
-    --gap: 48px;
-    --padding: 72px;
-    --section-gap: 120px;
-    --border: 4px solid var(--primary);
-  }
+ :root {
+ --primary: #000000;
+ --secondary: #ffffff;
+ --accent: #ff3b00;
+ --font: Impact, system-ui, 'Arial Black', sans-serif;
+ --mono: 'Courier New', 'Lucida Console', monospace;
+ --gap: 48px;
+ --padding: 72px;
+ --section-gap: 120px;
+ --border: 4px solid var(--primary);
+ }
 
-  html { scroll-behavior: smooth; }
+ html { scroll-behavior: smooth; }
 
-  body {
-    background: var(--primary);
-    color: var(--secondary);
-    font-family: var(--font);
-    line-height: 1.2;
-    max-width: none;
-    overflow-x: hidden;
-  }
+ body {
+ background: var(--primary);
+ color: var(--secondary);
+ font-family: var(--font);
+ line-height: 1.2;
+ max-width: none;
+ overflow-x: hidden;
+ }
 
-  /* raw CSS texture: noise overlay via pseudo */
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-image: 
-      repeating-linear-gradient(0deg, rgba(255,59,0,0.03) 0px, rgba(255,59,0,0.03) 2px, transparent 2px, transparent 4px),
-      repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 3px);
-    pointer-events: none;
-    z-index: 9999;
-    mix-blend-mode: overlay;
-  }
+ /* raw CSS texture: noise overlay via pseudo */
+ body::before {
+ content: '';
+ position: fixed;
+ top: 0; left: 0; width: 100%; height: 100%;
+ background-image: 
+ repeating-linear-gradient(0deg, rgba(255,59,0,0.03) 0px, rgba(255,59,0,0.03) 2px, transparent 2px, transparent 4px),
+ repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 3px);
+ pointer-events: none;
+ z-index: 9999;
+ mix-blend-mode: overlay;
+ }
 
-  /* utility */
-  .container { 
-    padding: calc(var(--padding) * 0.6) var(--padding); 
-    max-width: 1400px; 
-    margin: 0 auto;
-  }
+ /* utility */
+ .container { 
+ padding: calc(var(--padding) * 0.6) var(--padding); 
+ max-width: 1400px; 
+ margin: 0 auto;
+ }
 
-  .section-gap { margin-bottom: var(--section-gap); }
+ .section-gap { margin-bottom: var(--section-gap); }
 
-  /* typography */
-  h1, h2, h3, h4 { font-family: var(--font); text-transform: uppercase; letter-spacing: -0.02em; }
-  h1 { font-size: clamp(3rem, 10vw, 6rem); line-height: 0.9; margin-bottom: 24px; border: none; }
-  h2 { font-size: clamp(2.4rem, 7vw, 4rem); line-height: 1; margin-bottom: 32px; border-bottom: var(--border); padding-bottom: 16px; display: inline-block; }
-  h3 { font-size: 1.8rem; margin-bottom: 16px; }
-  p, li { font-family: var(--mono); font-size: 1rem; line-height: 1.6; margin-bottom: 24px; max-width: 72ch; }
-  a { color: var(--accent); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 3px; }
-  a:hover { color: var(--secondary); }
+ /* typography */
+ h1, h2, h3, h4 { font-family: var(--font); text-transform: uppercase; letter-spacing: -0.02em; }
+ h1 { font-size: clamp(3rem, 10vw, 6rem); line-height: 0.9; margin-bottom: 24px; border: none; }
+ h2 { font-size: clamp(2.4rem, 7vw, 4rem); line-height: 1; margin-bottom: 32px; border-bottom: var(--border); padding-bottom: 16px; display: inline-block; }
+ h3 { font-size: 1.8rem; margin-bottom: 16px; }
+ p, li { font-family: var(--mono); font-size: 1rem; line-height: 1.6; margin-bottom: 24px; max-width: 72ch; }
+ a { color: var(--accent); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 3px; }
+ a:hover { color: var(--secondary); }
 
-  /* header */
-  header {
-    background: var(--primary);
-    border-bottom: var(--border);
-    border-color: var(--accent);
-    padding: 24px var(--padding);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+ /* header */
+ header {
+ background: var(--primary);
+ border-bottom: var(--border);
+ border-color: var(--accent);
+ padding: 24px var(--padding);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
 
-  .logo {
-    font-family: var(--font);
-    font-size: 2.2rem;
-    color: var(--accent);
-    text-decoration: none;
-    letter-spacing: -0.03em;
-    transform: rotate(-2deg);
-    display: inline-block;
-    border: 4px solid var(--accent);
-    padding: 8px 24px;
-    background: var(--primary);
-  }
+ .logo {
+ font-family: var(--font);
+ font-size: 2.2rem;
+ color: var(--accent);
+ text-decoration: none;
+ letter-spacing: -0.03em;
+ transform: rotate(-2deg);
+ display: inline-block;
+ border: 4px solid var(--accent);
+ padding: 8px 24px;
+ background: var(--primary);
+ }
 
-  .logo span { color: var(--secondary); }
+ .logo span { color: var(--secondary); }
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    font-family: var(--font);
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
+ nav ul {
+ list-style: none;
+ display: flex;
+ gap: 40px;
+ font-family: var(--font);
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ }
 
-  nav ul li a {
-    color: var(--secondary);
-    text-decoration: none;
-    border: 3px solid transparent;
-    padding: 6px 12px;
-    transition: 0.1s;
-  }
+ nav ul li a {
+ color: var(--secondary);
+ text-decoration: none;
+ border: 3px solid transparent;
+ padding: 6px 12px;
+ transition: 0.1s;
+ }
 
-  nav ul li a:hover {
-    border-color: var(--accent);
-    background: var(--accent);
-    color: var(--primary);
-  }
+ nav ul li a:hover {
+ border-color: var(--accent);
+ background: var(--accent);
+ color: var(--primary);
+ }
 
-  .hamburger { display: none; cursor: pointer; }
-  #nav-toggle { display: none; }
+ .hamburger { display: none; cursor: pointer; }
+ #nav-toggle { display: none; }
 
-  /* hero */
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    min-height: 80vh;
-    padding: var(--padding);
-    border-bottom: var(--border);
-    border-color: var(--accent);
-    position: relative;
-    background: 
-      linear-gradient(135deg, var(--primary) 30%, transparent 100%),
-      repeating-linear-gradient(45deg, var(--accent) 0px, var(--accent) 6px, transparent 6px, transparent 12px);
-    background-blend-mode: normal;
-    margin-bottom: var(--section-gap);
-  }
+ /* hero */
+ .hero {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: center;
+ min-height: 80vh;
+ padding: var(--padding);
+ border-bottom: var(--border);
+ border-color: var(--accent);
+ position: relative;
+ background: 
+ linear-gradient(135deg, var(--primary) 30%, transparent 100%),
+ repeating-linear-gradient(45deg, var(--accent) 0px, var(--accent) 6px, transparent 6px, transparent 12px);
+ background-blend-mode: normal;
+ margin-bottom: var(--section-gap);
+ }
 
-  .hero h1 {
-    font-size: clamp(4rem, 14vw, 8rem);
-    border: none;
-    text-shadow: 8px 8px 0 var(--accent);
-    margin-bottom: 16px;
-    line-height: 0.85;
-    max-width: 900px;
-  }
+ .hero h1 {
+ font-size: clamp(4rem, 14vw, 8rem);
+ border: none;
+ text-shadow: 8px 8px 0 var(--accent);
+ margin-bottom: 16px;
+ line-height: 0.85;
+ max-width: 900px;
+ }
 
-  .hero .sub {
-    font-family: var(--mono);
-    font-size: 1.2rem;
-    color: var(--accent);
-    background: var(--primary);
-    padding: 12px 24px;
-    border: 3px solid var(--accent);
-    display: inline-block;
-    transform: rotate(1deg);
-    margin-bottom: 32px;
-  }
+ .hero .sub {
+ font-family: var(--mono);
+ font-size: 1.2rem;
+ color: var(--accent);
+ background: var(--primary);
+ padding: 12px 24px;
+ border: 3px solid var(--accent);
+ display: inline-block;
+ transform: rotate(1deg);
+ margin-bottom: 32px;
+ }
 
-  .hero .cta {
-    display: inline-block;
-    font-family: var(--font);
-    font-size: 2rem;
-    color: var(--primary);
-    background: var(--accent);
-    border: 4px solid var(--secondary);
-    padding: 16px 48px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transform: skewX(-8deg);
-    transition: 0.1s;
-    margin-top: 16px;
-  }
+ .hero .cta {
+ display: inline-block;
+ font-family: var(--font);
+ font-size: 2rem;
+ color: var(--primary);
+ background: var(--accent);
+ border: 4px solid var(--secondary);
+ padding: 16px 48px;
+ text-decoration: none;
+ text-transform: uppercase;
+ transform: skewX(-8deg);
+ transition: 0.1s;
+ margin-top: 16px;
+ }
 
-  .hero .cta:hover {
-    background: var(--secondary);
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: skewX(0deg) scale(1.05);
-  }
+ .hero .cta:hover {
+ background: var(--secondary);
+ border-color: var(--accent);
+ color: var(--accent);
+ transform: skewX(0deg) scale(1.05);
+ }
 
-  /* blog post */
-  .blog-post {
-    padding: var(--padding);
-    border: var(--border);
-    border-color: var(--accent);
-    background: #0a0a0a;
-    margin: 0 var(--padding) var(--section-gap);
-    transform: rotate(-0.5deg);
-  }
+ /* blog post */
+ .blog-post {
+ padding: var(--padding);
+ border: var(--border);
+ border-color: var(--accent);
+ background: #0a0a0a;
+ margin: 0 var(--padding) var(--section-gap);
+ transform: rotate(-0.5deg);
+ }
 
-  .blog-post h2 {
-    border-bottom: 4px solid var(--accent);
-    padding-bottom: 12px;
-    display: block;
-  }
+ .blog-post h2 {
+ border-bottom: 4px solid var(--accent);
+ padding-bottom: 12px;
+ display: block;
+ }
 
-  .blog-post p {
-    color: #ddd;
-    margin-bottom: 32px;
-  }
+ .blog-post p {
+ color: #ddd;
+ margin-bottom: 32px;
+ }
 
-  .blog-post .highlight-box {
-    background: var(--accent);
-    color: var(--primary);
-    padding: 24px;
-    border: 4px solid var(--secondary);
-    font-family: var(--font);
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin: 40px 0;
-    transform: rotate(1.2deg);
-    text-align: center;
-  }
+ .blog-post .highlight-box {
+ background: var(--accent);
+ color: var(--primary);
+ padding: 24px;
+ border: 4px solid var(--secondary);
+ font-family: var(--font);
+ font-size: 1.6rem;
+ text-transform: uppercase;
+ margin: 40px 0;
+ transform: rotate(1.2deg);
+ text-align: center;
+ }
 
-  /* ugc reviews */
-  .reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--gap);
-    padding: 0 var(--padding) var(--section-gap);
-  }
+ /* ugc reviews */
+ .reviews-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: var(--gap);
+ padding: 0 var(--padding) var(--section-gap);
+ }
 
-  .review-card {
-    background: #0a0a0a;
-    border: 4px solid var(--accent);
-    padding: 32px;
-    transform: rotate(var(--r, 0deg));
-    position: relative;
-  }
+ .review-card {
+ background: #0a0a0a;
+ border: 4px solid var(--accent);
+ padding: 32px;
+ transform: rotate(var(--r, 0deg));
+ position: relative;
+ }
 
-  .review-card:nth-child(odd) { --r: -1deg; }
-  .review-card:nth-child(even) { --r: 1.5deg; }
+ .review-card:nth-child(odd) { --r: -1deg; }
+ .review-card:nth-child(even) { --r: 1.5deg; }
 
-  .review-card .nick {
-    font-family: var(--font);
-    font-size: 1.5rem;
-    color: var(--accent);
-    text-transform: uppercase;
-    border-bottom: 3px solid var(--secondary);
-    padding-bottom: 8px;
-    margin-bottom: 12px;
-  }
+ .review-card .nick {
+ font-family: var(--font);
+ font-size: 1.5rem;
+ color: var(--accent);
+ text-transform: uppercase;
+ border-bottom: 3px solid var(--secondary);
+ padding-bottom: 8px;
+ margin-bottom: 12px;
+ }
 
-  .review-card .date {
-    font-family: var(--mono);
-    font-size: 0.8rem;
-    color: #888;
-    margin-bottom: 8px;
-  }
+ .review-card .date {
+ font-family: var(--mono);
+ font-size: 0.8rem;
+ color: #888;
+ margin-bottom: 8px;
+ }
 
-  .review-card .stars {
-    font-size: 1.8rem;
-    letter-spacing: 4px;
-    color: var(--accent);
-    margin-bottom: 16px;
-  }
+ .review-card .stars {
+ font-size: 1.8rem;
+ letter-spacing: 4px;
+ color: var(--accent);
+ margin-bottom: 16px;
+ }
 
-  .review-card .text {
-    font-family: var(--mono);
-    font-size: 0.9rem;
-    color: #bbb;
-    line-height: 1.5;
-  }
+ .review-card .text {
+ font-family: var(--mono);
+ font-size: 0.9rem;
+ color: #bbb;
+ line-height: 1.5;
+ }
 
-  /* footer */
-  footer {
-    background: var(--primary);
-    border-top: 6px solid var(--accent);
-    padding: var(--padding);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-  }
+ /* footer */
+ footer {
+ background: var(--primary);
+ border-top: 6px solid var(--accent);
+ padding: var(--padding);
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 24px;
+ }
 
-  footer .copy {
-    font-family: var(--mono);
-    font-size: 0.85rem;
-    color: #666;
-  }
+ footer .copy {
+ font-family: var(--mono);
+ font-size: 0.85rem;
+ color: #666;
+ }
 
-  footer .phone {
-    font-family: var(--font);
-    font-size: 2.2rem;
-    color: var(--accent);
-    text-decoration: none;
-    border: 4px solid var(--accent);
-    padding: 12px 32px;
-    display: inline-block;
-    transform: rotate(-1deg);
-  }
+ footer .phone {
+ font-family: var(--font);
+ font-size: 2.2rem;
+ color: var(--accent);
+ text-decoration: none;
+ border: 4px solid var(--accent);
+ padding: 12px 32px;
+ display: inline-block;
+ transform: rotate(-1deg);
+ }
 
-  footer .phone:hover {
-    background: var(--accent);
-    color: var(--primary);
-    border-color: var(--secondary);
-  }
+ footer .phone:hover {
+ background: var(--accent);
+ color: var(--primary);
+ border-color: var(--secondary);
+ }
 
-  /* responsive */
-  @media (max-width: 768px) {
-    :root {
-      --padding: 32px;
-      --gap: 32px;
-      --section-gap: 80px;
-    }
+ /* responsive */
+ @media (max-width: 768px) {
+ :root {
+ --padding: 32px;
+ --gap: 32px;
+ --section-gap: 80px;
+ }
 
-    header {
-      padding: 16px var(--padding);
-      flex-wrap: wrap;
-    }
+ header {
+ padding: 16px var(--padding);
+ flex-wrap: wrap;
+ }
 
-    .logo { font-size: 1.6rem; padding: 4px 16px; }
+ .logo { font-size: 1.6rem; padding: 4px 16px; }
 
-    .hamburger {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      padding: 8px;
-      border: 3px solid var(--accent);
-      background: transparent;
-    }
+ .hamburger {
+ display: flex;
+ flex-direction: column;
+ gap: 6px;
+ padding: 8px;
+ border: 3px solid var(--accent);
+ background: transparent;
+ }
 
-    .hamburger span {
-      display: block;
-      width: 28px;
-      height: 4px;
-      background: var(--accent);
-      transition: 0.2s;
-    }
+ .hamburger span {
+ display: block;
+ width: 28px;
+ height: 4px;
+ background: var(--accent);
+ transition: 0.2s;
+ }
 
-    #nav-toggle:checked ~ nav ul {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      padding: 24px;
-      background: var(--primary);
-      border: 4px solid var(--accent);
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-    }
+ #nav-toggle:checked ~ nav ul {
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+ padding: 24px;
+ background: var(--primary);
+ border: 4px solid var(--accent);
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ }
 
-    #nav-toggle:checked ~ .hamburger span:nth-child(1) { transform: rotate(45deg) translate(7px, 7px); }
-    #nav-toggle:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
-    #nav-toggle:checked ~ .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+ #nav-toggle:checked ~ .hamburger span:nth-child(1) { transform: rotate(45deg) translate(7px, 7px); }
+ #nav-toggle:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
+ #nav-toggle:checked ~ .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
 
-    nav ul {
-      display: none;
-    }
+ nav ul {
+ display: none;
+ }
 
-    .hero { min-height: 60vh; padding: var(--padding); }
-    .hero h1 { text-shadow: 4px 4px 0 var(--accent); }
+ .hero { min-height: 60vh; padding: var(--padding); }
+ .hero h1 { text-shadow: 4px 4px 0 var(--accent); }
 
-    .blog-post { margin: 0 16px var(--section-gap); transform: none; }
+ .blog-post { margin: 0 16px var(--section-gap); transform: none; }
 
-    .reviews-grid { grid-template-columns: 1fr; padding: 0 var(--padding) var(--section-gap); }
-    .review-card { transform: none !important; }
+ .reviews-grid { grid-template-columns: 1fr; padding: 0 var(--padding) var(--section-gap); }
+ .review-card { transform: none !important; }
 
-    footer { flex-direction: column; text-align: center; }
-    footer .phone { font-size: 1.6rem; }
-  }
+ footer { flex-direction: column; text-align: center; }
+ footer .phone { font-size: 1.6rem; }
+ }
 </style>
 </head>
 <body>
 
 <header>
-  <a href="/" class="logo">PBN<span>WARM</span></a>
-  <input type="checkbox" id="nav-toggle" style="display:none;">
-  <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">
-    <span></span><span></span><span></span>
-  </label>
-  <nav>
-    <ul>
-      <li><a href="#hero">시작</a></li>
-      <li><a href="#blog">전략</a></li>
-      <li><a href="#reviews">리뷰</a></li>
-      <li><a href="tel:010-6279-0862">전화</a></li>
-    </ul>
-  </nav>
+ <a href="/" class="logo">PBN<span>WARM</span></a>
+ <input type="checkbox" id="nav-toggle" style="display:none;">
+ <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">
+ 
+ </label>
+ <nav>
+ <ul>
+ <li><a href="#hero">시작</a></li>
+ <li><a href="#blog">전략</a></li>
+ <li><a href="#reviews">리뷰</a></li>
+ 
+ </ul>
+ </nav>
 </header>
 
 <main>
 <section class="hero container section-gap">
-  <p class="sub">마포 직영 서버 웜업 전문 블로그</p>
-  <h1>PBN 빌더를 위한 서버 웜업, 무엇을 먼저 챙겨야 할까</h1>
+ <p class="sub">마포 직영 서버 웜업 전문 블로그</p>
+ <h1>PBN 빌더를 위한 서버 웜업, 무엇을 먼저 챙겨야 할까</h1>
 </section>
 
 <article class="blog-post container section-gap">
-  <p class="text">PBN 빌더로 여러 사이트를 한 번에 준비하는 경우, 사이트를 실제로 열기 전 서버 웜업 단계를 거치는지 여부가 이후 운영 안정성에 영향을 줄 수 있습니다. 이 글에서는 마포에서 서버를 직접 관리하는 입장에서 웜업 단계를 어떻게 나누어 진행하는지 정리합니다.</p>
+ <p class="text">PBN 빌더로 여러 사이트를 한 번에 준비하는 경우, 사이트를 실제로 열기 전 서버 웜업 단계를 거치는지 여부가 이후 운영 안정성에 영향을 줄 수 있습니다. 이 글에서는 마포에서 서버를 직접 관리하는 입장에서 웜업 단계를 어떻게 나누어 진행하는지 정리합니다.</p>
 
-  <div class="highlight-box">
-    <p class="text">핵심은 순서입니다. 여러 사이트를 동시에 켜기보다 그룹을 나누어 순차적으로 접속량을 늘리는 방식이 일반적으로 안정적인 결과로 이어집니다.</p>
-  </div>
+ <div class="highlight-box">
+ <p class="text">핵심은 순서입니다. 여러 사이트를 동시에 켜기보다 그룹을 나누어 순차적으로 접속량을 늘리는 방식이 일반적으로 안정적인 결과로 이어집니다.</p>
+ </div>
 
-  <h2>웜업 단계를 나누는 기준</h2>
-  <p class="text">도메인 나이, 서버 위치, 그리고 이전에 사용된 이력이 있는지 여부에 따라 웜업에 필요한 기간이 달라질 수 있습니다. 신규 도메인일수록 더 낮은 접속량에서 시작해 천천히 단계를 올리는 방식이 흔히 사용됩니다.</p>
+ <h2>웜업 단계를 나누는 기준</h2>
+ <p class="text">도메인 나이, 서버 위치, 그리고 이전에 사용된 이력이 있는지 여부에 따라 웜업에 필요한 기간이 달라질 수 있습니다. 신규 도메인일수록 더 낮은 접속량에서 시작해 천천히 단계를 올리는 방식이 흔히 사용됩니다.</p>
 
-  <h2>단계별로 확인하는 항목</h2>
-  <div class="reviews-grid">
-    <div class="review-card">
-      <p class="copy">1단계 — 접속 경로와 DNS 설정이 정상적으로 반영되었는지 확인합니다.</p>
-    </div>
-    <div class="review-card">
-      <p class="copy">2단계 — 낮은 수준의 접속량으로 시작해 응답 속도와 오류 여부를 지켜봅니다.</p>
-    </div>
-    <div class="review-card">
-      <p class="copy">3단계 — 이상이 없으면 접속량을 단계적으로 늘리며 전체 사이트로 범위를 넓힙니다.</p>
-    </div>
-  </div>
+ <h2>단계별로 확인하는 항목</h2>
+ <div class="reviews-grid">
+ <div class="review-card">
+ <p class="copy">1단계 — 접속 경로와 DNS 설정이 정상적으로 반영되었는지 확인합니다.</p>
+ </div>
+ <div class="review-card">
+ <p class="copy">2단계 — 낮은 수준의 접속량으로 시작해 응답 속도와 오류 여부를 지켜봅니다.</p>
+ </div>
+ <div class="review-card">
+ <p class="copy">3단계 — 이상이 없으면 접속량을 단계적으로 늘리며 전체 사이트로 범위를 넓힙니다.</p>
+ </div>
+ </div>
 
-  <h2>PBN 빌더와 함께 볼 때 유의할 점</h2>
-  <p class="text">PBN 빌더로 여러 사이트를 한꺼번에 만들었다면, 웜업도 사이트마다 개별적으로 진행 상황을 기록해두는 편이 나중에 문제를 찾을 때 도움이 됩니다. 그룹별 진행 일지를 남기는 방식이 자주 활용됩니다.</p>
+ <h2>PBN 빌더와 함께 볼 때 유의할 점</h2>
+ <p class="text">PBN 빌더로 여러 사이트를 한꺼번에 만들었다면, 웜업도 사이트마다 개별적으로 진행 상황을 기록해두는 편이 나중에 문제를 찾을 때 도움이 됩니다. 그룹별 진행 일지를 남기는 방식이 자주 활용됩니다.</p>
 
-  <h2>웜업 중 자주 발생하는 실수</h2>
-  <ul>
-    <li class="text">여러 사이트를 한꺼번에 열어 초기 접속량이 한 번에 몰리는 경우</li>
-    <li class="text">단계별 진행 기록을 남기지 않아 문제가 생긴 구간을 다시 찾기 어려운 경우</li>
-    <li class="text">도메인 이력을 확인하지 않고 신규 사이트와 기존 사이트에 같은 속도를 적용하는 경우</li>
-    <li class="text">오류 발생 여부를 점검하는 주기를 정해두지 않아 뒤늦게 문제를 확인하는 경우</li>
-  </ul>
+ <h2>웜업 중 자주 발생하는 실수</h2>
+ <ul>
+ <li class="text">여러 사이트를 한꺼번에 열어 초기 접속량이 한 번에 몰리는 경우</li>
+ <li class="text">단계별 진행 기록을 남기지 않아 문제가 생긴 구간을 다시 찾기 어려운 경우</li>
+ <li class="text">도메인 이력을 확인하지 않고 신규 사이트와 기존 사이트에 같은 속도를 적용하는 경우</li>
+ <li class="text">오류 발생 여부를 점검하는 주기를 정해두지 않아 뒤늦게 문제를 확인하는 경우</li>
+ </ul>
 
-  <div class="cta">
-    <p class="text">서버 웜업 절차에 대해 더 자세히 안내받고 싶다면 아래 연락처로 문의해 주세요.</p>
-    <p class="phone"><a href="tel:010-6279-0862">010-6279-0862</a></p>
-  </div>
+ <div class="cta">
+ <p class="text">서버 웜업 절차에 대해 더 자세히 안내받고 싶다면 아래 연락처로 문의해 주세요.</p>
+ 
+ </div>
 </article>
 </main>
 
